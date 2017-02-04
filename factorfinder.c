@@ -3,13 +3,15 @@
 
 int main()
 {
-	int number;
+	int number, sqrtNumber;
 
 	printf("Enter Number: ");
 	scanf("%d", &number);
 
+	sqrtNumber = sqrt(number);
+
 	printf("Factors are:\n");
-	for(int i = 1; i <= sqrt(number); i++)
+	for(int i = 1; i <= sqrtNumber; i++)
 		if(number % i == 0)
 			printf("%d * %d\n", i, number/i);
 
